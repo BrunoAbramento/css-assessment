@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="contato, fale conosco, telefone, facebook, google plus, twitter"/>
+    <meta name="description" content="Descreva sua expêriencia com a GK Fashion nesse setor"/>
+    <meta name="viewport" content="width=320">
+    <meta name="viewport" content="width=480">
+    <title>GK Fashion - Contato</title>
+    <link rel="stylesheet" href="Css/estilo.css"/>
+    <link rel="stylesheet" href="Css/mobile.css" media="(max-width: 479px)">
+    <link rel="stylesheet" href="Css/tablet.css" media="(max-width: 939px)">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1 id="titulos_sobre"><a href="index.html" >GK Fashion</a></h1>
+
+        <p class="sacola"> Nenhum item na sacola de compras</p>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#">Sua Conta</a></li>
+                <li><a href="#">Lista de Desejos</a></li>
+                <li><a href="cartao_fidalidade.html">Cartão Fidelidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form method="post" action="contato.html" id="form-contato">
+                <ul>
+                    <li><label for="Nome"> Nome: </label><input type="text" id="Nome" placeholder="Nome Completo sem espaçamento" required="required" pattern="[A-Za-z]{2,15}$"/></li>
+                    <li><label for="email">Email: </label><input type="email" id="email" placeholder="endereço de E-mail" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/></li>
+                    <li><label>Motivo: </label>
+                        <select name="motivo" form="contatoForm">
+                            <option value="sugestao">Sugestão</option>
+                            <option value="critica">Críticas</option>
+                            <option value="elegio">Elogios</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    <li><label for="Coment">Comentários :</label><textarea id="Coment" cols="45" rows="5" placeholder="Escreva aqui sua experiência..."
+                                                          required="required"></textarea></li>
+                </ul>
+                <input type="submit"/>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="caixa-footer">
+            <img src="img\logo_rodape.png" alt="ícones de facebook, twitter e google plus, que ao clicar o redirecionam para as mesmas redes sociais." title="rodape">
+            &copy; Copyright GK Fashion
+            <ul class="social">
+                <li><a href="http://www.facebook.com/gkfashion ">Facebook</a></li>
+                <li><a href=" http://www.twitter.com/gkfashion ">Twiter</a></li>
+                <li><a href="http://plus.google.com/gkfashion ">G+</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
